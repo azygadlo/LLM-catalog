@@ -1,5 +1,6 @@
 # LLM-catalog
-Large Language Models (and not only) summarized in a table
+Majority of the Large Language Models (and not only) summarized in a table. 
+From the original Transformer to ChatGPT and beyond. 
 
 |model|year|paper|model type / objective|short info|parameters|training corpora|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
