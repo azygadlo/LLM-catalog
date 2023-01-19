@@ -1,10 +1,9 @@
 # LLM-catalog
-Majority of the Large Language Models (and not only) summarized in a table. 
-From the original Transformer to ChatGPT and beyond. 
+Majority of the Large Language Models (and not only) summarized in a table. From the original Transformer to ChatGPT and beyond.
 
 |model|year|paper|model type / objective|short info|parameters|training corpora|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|-|2015|[Dai et al.](https://arxiv.org/abs/1511.01432) (Google)|RNN (LSTM)|idea of fine-tuning pre-trained domain-specific language models|-|IMDB, DBPedia, Newsgroups|
+|-|2015|[Dai & Le](https://arxiv.org/abs/1511.01432) (Google)|RNN (LSTM)|idea of pre-training domain-specific language models to be later fine-tuned|-|IMDB, DBPedia, 20 Newsgroups|
 |**Transformer**|2017|[Vaswani et al.](https://arxiv.org/abs/1706.03762) (Google)|seq2seq for machine translation|original Transformer architecture|up to 213M|WMT (translation dataset)|
 |ULMFiT|2018|[Howard & Ruder](https://arxiv.org/abs/1801.06146) (fast.ai)|RNN (AWD-LSTM)|idea of fine-tuning pre-trained general-domain language models|-|Wikitext-103|
 |ELMo|2018|[Peters et al.](https://arxiv.org/abs/1802.05365) (Allen Institute for AI)|bidirectional RNN|embeddings from LM added as input to other task-specific models|94M|1B Word LM Benchmark|
