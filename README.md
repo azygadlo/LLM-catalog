@@ -1,6 +1,8 @@
 # LLM-catalog
 Majority of the Large Language Models (and not only) summarized in a table. From the original Transformer to ChatGPT and beyond.
 
+The list is long but not exhaustive. If you notice any incorrect information, let me know.
+
 |model|year|paper|model type / objective|short info|parameters|training corpora|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |-|2015|[Dai & Le](https://arxiv.org/abs/1511.01432) (Google)|autoregressive or autoencoder using RNN (LSTM)|idea of pre-training domain-specific language models to be later fine-tuned|?|IMDB, DBPedia, 20 Newsgroups|
@@ -22,7 +24,7 @@ Majority of the Large Language Models (and not only) summarized in a table. From
 |**BART** ([weights](https://huggingface.co/facebook/bart-base))|2019|[Lewis et al.](https://arxiv.org/abs/1910.13461) (Facebook)|seq2seq|pre-trained as a denoising autoencoder: to restore the corrupted input|BERT+10%|[same as BERT](https://github.com/facebookresearch/fairseq/issues/3550)|
 |**XLM-RoBERTa** ([weights](https://huggingface.co/xlm-roberta-base))|2019|[Conneau et al.](https://arxiv.org/abs/1911.02116) (Facebook)|masked LM|multi-lingual model pre-trained on texts in 100 languages|550M|CommonCrawl in 100 languages|
 |**Meena**|2020|[Adiwardana et al.](https://arxiv.org/abs/2001.09977) (Google)|seq2seq (for dialogue)|multi-turn chatbot trained to minimize perplexity of the next token|2.6B|public domain social media conversations|
-|**Turing NLG**|[2020](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft)|- (only blogpost) (Microsoft)|autoregressive|a language model scaled up to 17B parameters|17B|"same type of data that Megatron-LM models were trained on"|
+|**Turing NLG**|[2020](https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft)|only blogpost (Microsoft)|autoregressive|a language model scaled up to 17B parameters|17B|"same type of data that Megatron-LM models were trained on"|
 |**ELECTRA** ([weights](https://huggingface.co/google/electra-base-discriminator))|2020|[Clark et al.](https://arxiv.org/abs/2003.10555) (Stanford + Google)|replaced token detection|GAN-like pre-training; generator corrupts the input, discriminator detects corrupted tokens|same as BERT|same as BERT, for largest model: same as XLNet|
 |**GPT-3**<br />([API](https://beta.openai.com/docs/model-index-for-researchers))|2020|[Brown et al.](https://arxiv.org/abs/2005.14165) (OpenAI)|autoregressive|very similar to GPT-2, but larger (175B params; largest at that time)|175B|CommonCrawl + extended WebText + Books + Wikipedia|
 |**DeBERTa** ([weights](https://huggingface.co/microsoft/deberta-base))|2020|[He et al.](https://arxiv.org/abs/2006.03654) (Microsoft)|masked LM|BERT with disentangled attention (word content and position separated) + enhanced mask decoder|up to 1.5B|Wikipedia + BooksCorpus + OpenWebText + Stories|
@@ -54,4 +56,4 @@ Majority of the Large Language Models (and not only) summarized in a table. From
 |**BLOOM** ([weights](https://huggingface.co/bigscience/bloom))|2022|[Le Scao et al.](https://arxiv.org/abs/2211.05100) (BigScience)|autoregressive|a 176B parameter model resulting from the BigScience collaboration (trained for 3.5 months in the first half of the year)|176B|ROOTS dataset (mix of natural and programming languages)|
 |**BLOOMZ** ([weights](https://huggingface.co/bigscience/bloomz))|2022|[Muennighof et al.](https://arxiv.org/abs/2211.01786) (BigScience)|autoregressive|BLOOM finetuned on instructions|176B|TBD|
 |**Galactica** ([weights](https://huggingface.co/facebook/galactica-6.7b))|2022|[Taylor et al.](https://arxiv.org/abs/2211.09085) (Meta)|autoregressive|a model trained on a corpus of scientific knowledge, performing strongly in knowledge-intensive scientific tasks|up to 120B|papers, textbooks, encyclopedias, code, knowledge bases etc.|
-|**ChatGPT** ([API](https://chat.openai.com)|[2022](https://openai.com/blog/chatgpt)|- (only blogpost for now) (OpenAI)|autoregressive (for dialogue)|a model trained in a similar way as InstructGPT, using RLHF, in a dialogue/chat framework|?|human demonstrations of desired model behavior for prompts (see InstructGPT)|
+|**ChatGPT** ([API](https://chat.openai.com))|[2022](https://openai.com/blog/chatgpt)|only blogpost for now (OpenAI)|autoregressive (for dialogue)|a model trained in a similar way as InstructGPT, using RLHF, in a dialogue/chat framework|?|human demonstrations of desired model behavior for prompts (see InstructGPT)|
