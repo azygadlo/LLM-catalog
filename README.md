@@ -5,10 +5,10 @@ The list is long and still may not be exhaustive. If you think any other model i
 
 |model|year|paper|model type / objective|short info|parameters|training corpora|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|-|2015|[Dai & Le](https://arxiv.org/abs/1511.01432) (Google)|autoregressive or autoencoder using RNN (LSTM)|idea of pre-training domain-specific language models to be later fine-tuned|?|IMDB, DBPedia, 20 Newsgroups|
+|-|2015|[Dai & Le](https://arxiv.org/abs/1511.01432) (Google)|autoregressive or autoencoder RNN (LSTM)|idea of pre-training domain-specific language models to be later fine-tuned|?|IMDB, DBPedia, 20 Newsgroups|
 |**Transformer**|2017|[Vaswani et al.](https://arxiv.org/abs/1706.03762) (Google)|seq2seq for machine translation|original Transformer architecture|up to 213M|WMT 2014 (translation dataset)|
-|ULMFiT|2018|[Howard & Ruder](https://arxiv.org/abs/1801.06146) (fast.ai)|autoregressive using RNN (AWD-LSTM)|idea of pre-training general-domain language models to be later fine-tuned|?|Wikitext-103|
-|ELMo|2018|[Peters et al.](https://arxiv.org/abs/1802.05365) (Allen Institute for AI)|bidirectional LM using RNN (LSTM)|embeddings from LM added as input to other task-specific models|94M|1B Word LM Benchmark|
+|ULMFiT|2018|[Howard & Ruder](https://arxiv.org/abs/1801.06146) (fast.ai)|autoregressive RNN (AWD-LSTM)|idea of pre-training general-domain language models to be later fine-tuned|?|Wikitext-103|
+|ELMo|2018|[Peters et al.](https://arxiv.org/abs/1802.05365) (Allen Institute for AI)|bidirectional RNN LM (LSTM)|embeddings from LM added as input to other task-specific models|94M|1B Word LM Benchmark|
 |**GPT**|[2018](https://openai.com/blog/language-unsupervised)|[Radford et al.](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) (OpenAI)|autoregressive|first LLM using the Transformer model (decoder-only)|117M|BooksCorpus|
 |**BERT** ([weights](https://huggingface.co/bert-base-uncased))|[2018](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html)|[Devlin et al.](https://arxiv.org/abs/1810.04805) (Google)|masked LM + next sentence prediction|idea of masked language modeling (bidirectional encoder)|110M/340M|BooksCorpus + Wikipedia|
 |**Transformer-XL**|2019|[Dai et al.](https://arxiv.org/abs/1901.02860) (CMU + Google)|masked LM + next sentence prediction|learning dependency beyond fixed-length context (processing segments)|up to ~0.8B|Wikitext-103, 1B Word LM Benchmark|
