@@ -1,7 +1,7 @@
 # LLM-catalog
 Majority of the Large Language Models (and not only) summarized in a table. From the original Transformer to ChatGPT and beyond.
 
-The list is long but not exhaustive. If you notice any incorrect information, let me know.
+The list is long but may not be exhaustive. If you think any other model is worth adding or you notice any incorrect information, let me know.
 
 |model|year|paper|model type / objective|short info|parameters|training corpora|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
